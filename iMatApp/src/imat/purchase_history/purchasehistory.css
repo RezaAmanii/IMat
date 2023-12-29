@@ -1,0 +1,39 @@
+@font-face{
+    src: url("../resources/fonts/Oregano-Regular.ttf"), url("../resources/fonts/Inter.ttf");
+}
+
+#purchaseHistoryTitle{
+    -fx-font-family: "Inter";
+    -fx-font-size: 64px;
+}
+
+#purchaseHistoryPane{
+    -fx-border-width: 5px;
+    -fx-border-color: #26556D transparent transparent transparent;
+}
+
+.orderLabels{
+    -fx-font-family: "Inter";
+    -fx-font-size: 32px;
+}
+
+.profileButton{
+    -fx-font-family: "Inter";
+    -fx-font-size: 28px;
+    -fx-background-color: #F5A658;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+}
+
+.profileButton:hover{
+    -fx-font-family: "Inter";
+    -fx-font-size: 30px;
+    -fx-background-color: #8CC444;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+}
+
+#emptyShoppingCartLabel{
+    -fx-font-family: "Inter";
+    -fx-font-size: 18px;
+}

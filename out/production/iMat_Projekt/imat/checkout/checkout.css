@@ -1,0 +1,48 @@
+@font-face{
+    src: url("../resources/fonts/Oregano-Regular.ttf"), url("../resources/fonts/Inter.ttf");
+}
+
+.checkoutBox{
+    -fx-border-color: #26556D;
+}
+
+.scroll-pane{
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.shoppingCart{
+    -fx-border-width: 2px;
+    -fx-border-color: transparent transparent transparent #26556D;
+}
+
+.shoppingCartLabel{
+    -fx-font-family: "Inter";
+    -fx-font-size: 40px;
+    -fx-font-weight: 700;
+    -fx-background-color: transparent; /*lade till detta men det kanske var meningen att det såg ut som det gjorde*/
+}
+
+.shoppingCartSeparator .line{
+    -fx-background-color: #25565D;
+    -fx-border-color: #25565D;
+}
+
+.hoveringOverTrash{
+    /*private Image shoppingCartImage = new Image("images/shoppingcart.png");*/
+    -fx-image: url(../resources/trash.png);
+}
+
+.hoveringOverTrash:hover{
+    /*private Image shoppingCartImage = new Image("images/shoppingcart.png");*/
+    -fx-image: url(../resources/disposal.png);
+}
+
+.smallShoppingCartLabels{
+    -fx-font-family: "Inter";
+    -fx-font-size: 20px;
+    -fx-font-weight: Bold;
+}

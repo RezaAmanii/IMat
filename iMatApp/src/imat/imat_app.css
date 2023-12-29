@@ -1,0 +1,139 @@
+@font-face{
+    src: url("resources/fonts/Oregano-Regular.ttf"), url("resources/fonts/Inter.ttf");
+}
+
+.navButtons{
+    -fx-background-radius: 100px;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3px, 3px);
+    /* #4192BA; */
+}
+.navButtons:hover{
+    -fx-border-color: #F5A658;
+    -fx-border-width: 3px;
+    -fx-border-radius: 100px;
+}
+
+.searchButton{
+    -fx-background-radius: 48px;
+    -fx-background-color: #D3D3D3;
+}
+
+.searchButton:hover{
+    -fx-border-radius: 48px;
+    -fx-border-width: 3px;
+    -fx-border-color: #F5A658;
+}
+
+.logoText{
+    -fx-font-family: "Oregano";
+    -fx-font-size: 84px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3px, 3px);
+}
+
+#searchBar{
+    -fx-background-radius: 48px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3px, 3px);
+}
+
+.categoryButtons{
+    -fx-background-radius: 20px;
+    -fx-background-color: #A6A6A6;
+    -fx-font-size: 23px;
+    -fx-font-family: "Inter";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3, 3);
+}
+
+.categoryButtonPressed{
+    -fx-background-radius: 20px;
+    -fx-background-color: #F5A658;
+    -fx-font-size: 23px;
+    -fx-font-family: "Inter";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3px, 3px);
+}
+.categoryButtons:hover{
+    -fx-background-radius: 20px;
+    -fx-background-color: #F5A658;
+    -fx-font-size: 23px;
+    -fx-font-family: "Inter";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3px, 3px);
+}
+
+.shoppingCartLabel{
+    -fx-background-color: #F1F1F1;
+    -fx-font-family: "Inter";
+    -fx-font-size: 40px;
+    -fx-font-weight: Bold;
+}
+
+.smallShoppingCartLabels{
+    -fx-font-family: "Inter";
+    -fx-font-size: 20px;
+    -fx-font-weight: Bold;
+}
+
+.gotoshopButton{
+    -fx-background-color: #F5A658;
+    -fx-font-family: "Inter";
+    -fx-font-size: 24px;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3px, 3px);
+}
+
+.shoppingCartText{
+    -fx-font-size: 28px;
+    -fx-font-family: "Inter";
+}
+
+.hooveringOverButtons:hover{
+    -fx-background-color: #8CC444;
+    -fx-font-size: 26px;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-pref-width: 25px;
+
+}
+
+.hoveringOversubCategory:hover{
+    /*-fx-background-color: #F1F1F1;*/
+    -fx-background-color: #F5A658;
+}
+
+.subcategoryBar{
+    -fx-background-color: #F1F1F1;
+    -fx-border-color: #F5A658;
+    -fx-border-width: 4px;
+}
+
+.subCategoryButtons{
+    -fx-font-size: 24px;
+    -fx-background-radius: 30px;
+    -fx-background-color: #D3D3D3;
+}
+
+.subcategoryButtonPressed{
+    -fx-font-size: 24px;
+    -fx-background-radius: 30px;
+    -fx-background-color: #F5A658;
+}
+
+.hoveringOverTrash{
+    /*private Image shoppingCartImage = new Image("images/shoppingcart.png");*/
+    -fx-image: url(resources/trash.png);
+}
+
+.hoveringOverTrash:hover{
+    /*private Image shoppingCartImage = new Image("images/shoppingcart.png");*/
+    /*-fx-image: url(resources/disposal.png);*/
+}
+
+.scroll_pane_border{
+    -fx-border-size: 10px;
+    -fx-border-color: transparent #000000 transparent transparent;
+}
+
+
+
+/*.ImageView: hover > .categoryButtons{
+}*/

@@ -1,0 +1,79 @@
+@font-face{
+    src: url("../resources/fonts/Oregano-Regular.ttf"), url("../resources/fonts/Inter.ttf");
+}
+
+#profileOverview{
+    -fx-font-family: "Inter";
+    -fx-font-size: 64px;
+}
+
+#emptyShoppingCartLabel{
+    -fx-font-family: "Inter";
+    -fx-font-size: 18px;
+}
+
+.profileBox{
+    -fx-border-radius: 25px;
+    -fx-border-width: 5px;
+    -fx-border-color: #26556D;
+}
+
+.profileBoxTitle{
+    -fx-font-family: "Inter";
+    -fx-font-size: 48px;
+}
+
+.informationText{
+    -fx-font-family: "Inter";
+    -fx-font-size: 24px;
+}
+
+.profileButton{
+    -fx-font-family: "Inter";
+    -fx-font-size: 28px;
+    -fx-background-color: #F5A658;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+}
+
+.profileButton:hover{
+    -fx-font-family: "Inter";
+    -fx-font-size: 30px;
+    -fx-background-color: #8CC444;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+}
+
+#saveButton{
+    -fx-font-family: "Inter";
+    -fx-font-size: 24px;
+    -fx-background-color: #1EA649;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+}
+
+.saveButtonhoover#hover{
+    -fx-font-family: "Inter";
+    -fx-font-size: 26px;
+    -fx-background-color: #F5A658;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+}
+
+#profileBoxLine{
+    -fx-stroke: #26556D;
+}
+
+.errorMessage{
+    -fx-font-family: "Inter";
+    -fx-font-size: 16px;
+    -fx-text-fill: #FF2400
+}
+
+.errorField{
+    -fx-border-color: #FF2400
+}
+
+.completedField{
+    -fx-border-color: #1EA649
+}

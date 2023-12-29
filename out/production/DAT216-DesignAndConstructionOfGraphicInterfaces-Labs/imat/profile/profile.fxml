@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1920.0" stylesheets="@profile.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="1920.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="274.0" layoutY="175.0" prefHeight="700.0" prefWidth="1372.0" styleClass="profileBox" stylesheets="@profile.css" AnchorPane.rightAnchor="274.0">
+               <children>
+                  <Label layoutX="140.0" layoutY="14.0" prefHeight="97.0" prefWidth="432.0" styleClass="profileBoxTitle" stylesheets="@profile.css" text="Personliga uppgifter" />
+                  <AnchorPane layoutX="87.0" layoutY="111.0" prefHeight="81.0" prefWidth="538.0">
+                     <children>
+                        <TextField fx:id="firstNameField" layoutX="193.0" layoutY="20.0" prefHeight="41.0" prefWidth="345.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></TextField>
+                        <Label layoutX="3.0" layoutY="20.0" prefHeight="41.0" prefWidth="149.0" styleClass="informationText" stylesheets="@profile.css" text="Förnamn:" />
+                        <ImageView fx:id="firstNameImage" fitHeight="36.0" fitWidth="36.0" layoutX="500.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="87.0" layoutY="192.0" prefHeight="81.0" prefWidth="538.0">
+                     <children>
+                        <TextField fx:id="lastNameField" layoutX="193.0" layoutY="20.0" prefHeight="41.0" prefWidth="345.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></TextField>
+                        <Label layoutX="3.0" layoutY="20.0" prefHeight="41.0" prefWidth="149.0" styleClass="informationText" stylesheets="@profile.css" text="Efternamn:" />
+                        <Label fx:id="firstNameError" layoutX="193.0" layoutY="-8.0" prefHeight="17.0" prefWidth="345.0" styleClass="errorMessage" text="Label" />
+                        <Label fx:id="lastNameError" layoutX="193.0" layoutY="69.0" prefHeight="17.0" prefWidth="345.0" styleClass="errorMessage" text="Label" />
+                        <ImageView fx:id="lastNameImage" fitHeight="36.0" fitWidth="36.0" layoutX="500.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="87.0" layoutY="273.0" prefHeight="81.0" prefWidth="538.0">
+                     <children>
+                        <TextField fx:id="addressField" layoutX="193.0" layoutY="20.0" prefHeight="41.0" prefWidth="345.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="3.0" layoutY="20.0" prefHeight="41.0" prefWidth="149.0" styleClass="informationText" stylesheets="@profile.css" text="Adress:" />
+                        <ImageView fx:id="addressImage" fitHeight="36.0" fitWidth="36.0" layoutX="500.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="87.0" layoutY="350.0" prefHeight="81.0" prefWidth="538.0">
+                     <children>
+                        <TextField fx:id="postalCodeField" layoutX="193.0" layoutY="20.0" prefHeight="41.0" prefWidth="345.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></TextField>
+                        <Label layoutX="3.0" layoutY="20.0" prefHeight="41.0" prefWidth="149.0" styleClass="informationText" stylesheets="@profile.css" text="Postnummer:" />
+                        <Label fx:id="postalCodeError" layoutX="193.0" layoutY="69.0" prefHeight="17.0" prefWidth="345.0" styleClass="errorMessage" text="Label" />
+                        <ImageView fx:id="postalCodeImage" fitHeight="36.0" fitWidth="36.0" layoutX="500.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="87.0" layoutY="431.0" prefHeight="81.0" prefWidth="538.0">
+                     <children>
+                        <TextField fx:id="postAddressField" layoutX="193.0" layoutY="20.0" prefHeight="41.0" prefWidth="345.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="3.0" layoutY="20.0" prefHeight="41.0" prefWidth="149.0" styleClass="informationText" stylesheets="@profile.css" text="Postort:" />
+                        <Label fx:id="localityError" layoutX="193.0" layoutY="67.0" prefHeight="17.0" prefWidth="345.0" styleClass="errorMessage" text="Label" />
+                        <ImageView fx:id="postAddressImage" fitHeight="36.0" fitWidth="36.0" layoutX="500.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="87.0" layoutY="512.0" prefHeight="81.0" prefWidth="538.0">
+                     <children>
+                        <TextField fx:id="emailField" layoutX="193.0" layoutY="20.0" prefHeight="41.0" prefWidth="345.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="3.0" layoutY="20.0" prefHeight="41.0" prefWidth="179.0" styleClass="informationText" stylesheets="@profile.css" text="E-post:" />
+                        <Label fx:id="emailError" layoutX="193.0" layoutY="64.0" prefHeight="17.0" prefWidth="345.0" styleClass="errorMessage" text="Label" />
+                        <ImageView fx:id="emailImage" fitHeight="36.0" fitWidth="36.0" layoutX="500.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="87.0" layoutY="593.0" prefHeight="81.0" prefWidth="538.0">
+                     <children>
+                        <TextField fx:id="phoneNumberField" layoutX="193.0" layoutY="20.0" prefHeight="41.0" prefWidth="345.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></TextField>
+                        <Label layoutX="3.0" layoutY="20.0" prefHeight="41.0" prefWidth="179.0" styleClass="informationText" stylesheets="@profile.css" text="Mobil/telefon:" />
+                        <Label fx:id="phoneNumberError" layoutX="193.0" layoutY="64.0" prefHeight="17.0" prefWidth="345.0" styleClass="errorMessage" text="Label" />
+                        <ImageView fx:id="phoneNumberImage" fitHeight="36.0" fitWidth="36.0" layoutX="500.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="860.0" layoutY="14.0" prefHeight="97.0" prefWidth="288.0" styleClass="profileBoxTitle" stylesheets="@profile.css" text="Kortuppgifter" />
+                  <AnchorPane layoutX="735.0" layoutY="111.0" prefHeight="81.0" prefWidth="538.0">
+                     <children>
+                        <TextField fx:id="cardOwnerField" layoutX="193.0" layoutY="20.0" prefHeight="41.0" prefWidth="345.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></TextField>
+                        <Label layoutX="3.0" layoutY="20.0" prefHeight="41.0" prefWidth="191.0" styleClass="informationText" stylesheets="@profile.css" text="Kortinnehavare:" />
+                        <Label fx:id="cardOwnerError" layoutX="193.0" layoutY="64.0" prefHeight="17.0" prefWidth="345.0" styleClass="errorMessage" text="Label" />
+                        <ImageView fx:id="cardOwnerImage" fitHeight="36.0" fitWidth="36.0" layoutX="500.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="735.0" layoutY="192.0" prefHeight="81.0" prefWidth="538.0">
+                     <children>
+                        <TextField fx:id="cardNumberField" layoutX="193.0" layoutY="20.0" prefHeight="41.0" prefWidth="345.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></TextField>
+                        <Label layoutX="3.0" layoutY="20.0" prefHeight="41.0" prefWidth="191.0" styleClass="informationText" stylesheets="@profile.css" text="Kortnummer:" />
+                        <Label fx:id="cardNumberError" layoutX="193.0" layoutY="61.0" prefHeight="17.0" prefWidth="345.0" styleClass="errorMessage" text="Label" />
+                        <ImageView fx:id="cardNumberImage" fitHeight="36.0" fitWidth="36.0" layoutX="500.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="735.0" layoutY="273.0" prefHeight="81.0" prefWidth="538.0">
+                     <children>
+                        <TextField fx:id="monthField" layoutX="194.0" layoutY="19.0" prefHeight="41.0" prefWidth="132.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></TextField>
+                        <Label layoutX="3.0" layoutY="20.0" prefHeight="41.0" prefWidth="191.0" styleClass="informationText" stylesheets="@profile.css" text="Utgångsdatum:" />
+                        <TextField fx:id="yearField" layoutX="367.0" layoutY="20.0" prefHeight="41.0" prefWidth="132.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></TextField>
+                        <Line endX="-1.0" layoutX="355.0" layoutY="40.0" startX="-16.0" />
+                        <Label fx:id="monthError" layoutX="195.0" layoutY="64.0" prefHeight="25.0" prefWidth="304.0" styleClass="errorMessage" text="Label" />
+                        <ImageView fx:id="yearImage" fitHeight="36.0" fitWidth="36.0" layoutX="463.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="monthImage" fitHeight="36.0" fitWidth="36.0" layoutX="290.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/check-circle-solid-240.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Line id="profileBoxLine" endX="74.0" endY="-20.0" layoutX="612.0" layoutY="41.0" startX="74.0" startY="642.0" />
+                  <Button id="saveButton" layoutX="878.0" layoutY="467.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="91.0" prefWidth="288.0" styleClass="saveButtonhoover" stylesheets="@profile.css" text="Spara uppgifter">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children></AnchorPane>
+            <Label id="profileOverview" layoutX="775.0" layoutY="20.0" prefHeight="110.0" prefWidth="370.0" stylesheets="@profile.css" text="Profilöversikt" />
+            <Button fx:id="goToHome" layoutX="40.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleHomeClick" prefHeight="100.0" prefWidth="225.0" styleClass="profileButton" stylesheets="@profile.css" text="Handla">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="checkoutButton" layoutX="1660.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleCheckoutClick" prefHeight="100.0" prefWidth="225.0" styleClass="profileButton" stylesheets="@profile.css" text="Gå till kassa">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label id="emptyShoppingCartLabel" fx:id="emptyShoppingCartLabel" layoutX="1693.0" layoutY="147.0" prefHeight="35.0" prefWidth="159.0" />
+         </children></AnchorPane>
+   </children>
+</fx:root>

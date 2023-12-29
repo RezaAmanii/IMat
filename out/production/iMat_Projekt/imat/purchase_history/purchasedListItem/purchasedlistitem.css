@@ -1,0 +1,66 @@
+@font-face{
+    src: url("../../resources/fonts/Oregano-Regular.ttf"), url("../../resources/fonts/Inter.ttf");
+}
+
+#mainPane{
+    -fx-border-width: 5px;
+    -fx-border-color: transparent transparent #26556D transparent;
+}
+
+#articleButton_1{
+    -fx-background-color: #1EA649;
+    -fx-background-radius: 20px;
+    -fx-font-family: "Inter";
+    -fx-font-size: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3, 3);
+}
+
+#articleButton_1#hover{
+    -fx-background-color: #F5A658;
+    -fx-background-radius: 20px;
+    -fx-font-family: "Inter";
+    -fx-font-size: 23px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3, 3);
+}
+
+
+#articleButton_2{
+    -fx-background-color: #FF7F7F;
+    -fx-background-radius: 20px;
+    -fx-font-family: "Inter";
+    -fx-font-size: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3, 3);
+}
+
+#articleButton_2#hover{
+    -fx-background-color: #F5A658;
+    -fx-background-radius: 20px;
+    -fx-font-family: "Inter";
+    -fx-font-size: 23px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3, 3);
+}
+
+.extendedList{
+    -fx-border-color: #26556D;
+    -fx-border-radius: 5px;
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+}
+
+.orderBoxes{
+    -fx-border-color: #26556D;
+    -fx-border-radius: 20px;
+    -fx-fill: #FCFCFC;
+    -fx-background-radius: 20px;
+}
+
+.orderBoxLabel{
+    -fx-font-family: "Inter";
+    -fx-font-size: 24px;
+}
+
+#orderBoxDateLabel{
+    -fx-font-family: "Inter";
+    -fx-font-size: 24px;
+}
+

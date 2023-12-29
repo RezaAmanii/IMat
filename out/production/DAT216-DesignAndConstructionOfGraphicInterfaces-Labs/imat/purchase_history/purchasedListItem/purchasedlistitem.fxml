@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="mainPane" prefHeight="200.0" prefWidth="1920.0" stylesheets="@purchasedlistitem.css" type="AnchorPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button id="articleButton_1" fx:id="showItemsButton" layoutX="1600.0" layoutY="70.0" mnemonicParsing="false" onAction="#showOrderItems" prefHeight="58.0" prefWidth="250.0" stylesheets="@purchasedlistitem.css" text="Se artiklar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <FlowPane fx:id="articleList" layoutX="500.0" layoutY="141.0" prefHeight="45.0" prefWidth="1000.0" />
+      <Button id="articleButton_2" fx:id="kopieraTillVarukorgenButton" layoutX="1300.0" layoutY="70.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="250.0" stylesheets="@purchasedlistitem.css" text="Kopiera till varukorgen">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="arrow" fitHeight="28.0" fitWidth="25.0" layoutX="1778.0" layoutY="92.0" onMouseClicked="#showOrderItems" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <AnchorPane layoutX="100.0" layoutY="70.0" prefHeight="58.0" prefWidth="228.0" styleClass="orderBoxes">
+         <children>
+            <Label id="orderBoxDateLabel" fx:id="orderDateLabel" layoutX="20.0" layoutY="6.0" prefHeight="45.0" prefWidth="193.0" text="2023-05-20 18:34">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="500.0" layoutY="70.0" prefHeight="58.0" prefWidth="228.0" styleClass="orderBoxes">
+         <children>
+            <Circle fill="#ffc51f" layoutX="37.0" layoutY="29.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="84.0" layoutY="6.0" prefHeight="45.0" prefWidth="71.0" styleClass="orderBoxLabel" text="Påväg" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="900.0" layoutY="71.0" prefHeight="58.0" prefWidth="228.0" styleClass="orderBoxes">
+         <children>
+            <Label fx:id="orderPriceLabel" layoutX="69.0" layoutY="12.0" prefHeight="35.0" prefWidth="103.0" styleClass="orderBoxLabel" text="363,60 kr" />
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>

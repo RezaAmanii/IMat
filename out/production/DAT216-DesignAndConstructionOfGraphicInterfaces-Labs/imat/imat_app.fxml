@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homescreen" maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #FFFFFF;" stylesheets="@imat_app.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imat.BossController">
+      <children>
+      <AnchorPane fx:id="switchToDetailPane" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="180.0">
+         <children>
+               <AnchorPane fx:id="pageSwitchPane" prefHeight="900.0" prefWidth="1920.0" />
+            <ScrollPane fx:id="scrollPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="649.0" prefWidth="1442.0" style="-fx-background-color: #FFFFFF;" styleClass="scroll_pane_border">
+               <StackPane.margin>
+                  <Insets right="478.0" top="248.0" />
+               </StackPane.margin>
+               <content>
+                  <FlowPane fx:id="itemFlowPane" alignment="CENTER" columnHalignment="RIGHT" prefHeight="495.0" prefWidth="1442.0" rowValignment="TOP" snapToPixel="false" styleClass="flow-pane" />
+               </content>
+            </ScrollPane>
+               <AnchorPane fx:id="subCategoryBar" prefHeight="70.0" prefWidth="1920.0" style="-fx-background-color: #F1F1F1;" styleClass="subcategoryBar">
+               <StackPane.margin>
+                  <Insets bottom="655.0" left="-10.0" right="-10.0" top="180.0" />
+               </StackPane.margin>
+               <children>
+                  <Button fx:id="firstButton" layoutX="64.0" layoutY="4.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="400.0" stylesheets="@imat_app.css" text="Button1" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <styleClass>
+                        <String fx:value="subCategoryButtons" />
+                        <String fx:value="hoveringOversubCategory" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="secondButton" layoutX="528.0" layoutY="7.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="400.0" stylesheets="@imat_app.css" text="Button2" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <styleClass>
+                        <String fx:value="subCategoryButtons" />
+                        <String fx:value="hoveringOversubCategory" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="thirdButton" layoutX="992.0" layoutY="6.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="400.0" stylesheets="@imat_app.css" text="Button3" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <styleClass>
+                        <String fx:value="subCategoryButtons" />
+                        <String fx:value="hoveringOversubCategory" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="fourthButton" layoutX="1456.0" layoutY="23.0" mnemonicParsing="false" prefWidth="400.0" stylesheets="@imat_app.css" text="Button4" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <styleClass>
+                        <String fx:value="subCategoryButtons" />
+                        <String fx:value="hoveringOversubCategory" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children></AnchorPane>
+               <AnchorPane prefHeight="250.0" prefWidth="1920.0" style="-fx-background-color: #F1F1F1;">
+                  <children>
+                     <Button fx:id="alltButton" alignment="BOTTOM_CENTER" layoutX="60.0" layoutY="26.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="250.0" style="-fx-background-radius: 20;" styleClass="categoryButtons" text="Allt" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fx:id="alltImageView" fitHeight="80.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/supermarket.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                     <Button fx:id="kottButton" alignment="BOTTOM_CENTER" layoutX="370.0" layoutY="26.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="250.0" style="-fx-background-radius: 20;" styleClass="categoryButtons" text="Kött &amp; Fisk">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fx:id="kottImageView" fitHeight="80.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/protein.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                     <Button fx:id="fruktButton" alignment="BOTTOM_CENTER" layoutX="680.0" layoutY="26.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="250.0" style="-fx-background-radius: 20;" styleClass="categoryButtons" text="Frukt &amp; Grönt">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fx:id="fruktImageView" fitHeight="80.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/healthy-food.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                     <Button fx:id="mejeriButton" alignment="BOTTOM_CENTER" layoutX="990.0" layoutY="26.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="250.0" style="-fx-background-radius: 20;" styleClass="categoryButtons" text="Mejeri, Ost &amp; Ägg">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fx:id="mejeriImageView" fitHeight="80.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/dairy.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                     <Button fx:id="skafferiButton" alignment="BOTTOM_CENTER" layoutX="1300.0" layoutY="26.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="260.0" style="-fx-background-radius: 20;" styleClass="categoryButtons" text="Torrvaror &amp; Sötsaker">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fx:id="torrvarorImageView" fitHeight="80.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/flour.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                     <Button fx:id="dryckButton" alignment="BOTTOM_CENTER" layoutX="1610.0" layoutY="26.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="250.0" style="-fx-background-radius: 20;" styleClass="categoryButtons" text="Dryck">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fx:id="dryckImageView" fitHeight="80.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/beverages.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  </children>
+               <StackPane.margin>
+                  <Insets bottom="650.0" />
+               </StackPane.margin>
+               </AnchorPane>
+               <AnchorPane fx:id="varukorgPane" prefHeight="652.0" prefWidth="478.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #A6A6A6;" StackPane.alignment="BOTTOM_RIGHT">
+               <children>
+                  <AnchorPane layoutX="2.0" layoutY="110.0" prefHeight="428.0" prefWidth="476.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0">
+                     <children>
+                        <ScrollPane fx:id="cartScrollPane" hbarPolicy="NEVER" prefHeight="428.0" prefWidth="476.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <FlowPane fx:id="cartFlowPane" prefHeight="58.0" prefWidth="475.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="2.0" layoutY="539.0" prefHeight="108.0" prefWidth="478.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="539.0">
+                     <children>
+                        <Separator prefHeight="3.0" prefWidth="475.0" AnchorPane.leftAnchor="1.0" />
+                        <Label layoutX="46.0" layoutY="7.0" prefHeight="34.0" prefWidth="85.0" styleClass="shoppingCartText" text="Totalt" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="347.0" />
+                        <Label fx:id="shoppingCartSum" alignment="CENTER_RIGHT" layoutX="297.0" layoutY="7.0" prefHeight="40.0" prefWidth="137.0" styleClass="shoppingCartText" text="kr" AnchorPane.leftAnchor="297.0" AnchorPane.rightAnchor="46.0" />
+                        <Button fx:id="gotoshopButton" alignment="CENTER" layoutX="33.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#openCheckoutView" prefHeight="50.0" prefWidth="411.0" text="Gå till kassa">
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.6509804129600525" green="0.6509804129600525" blue="0.6509804129600525" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <styleClass>
+                              <String fx:value="gotoshopButton" />
+                              <String fx:value="hooveringOverButtons" />
+                           </styleClass>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="3.0" layoutY="3.0" prefHeight="58.0" prefWidth="474.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="70.0" prefWidth="472.0" styleClass="shoppingCartLabel" text="Varukorg" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Separator layoutY="63.0" prefWidth="474.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <ImageView fx:id="trashImageView" fitHeight="44.0" fitWidth="44.0" layoutX="372.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" styleClass="hoveringOverTrash">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="5.0" layoutY="61.0" prefHeight="51.0" prefWidth="470.0" style="-fx-background-color: #F1F1F1;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" layoutY="12.0" prefHeight="30.0" prefWidth="80.0" styleClass="smallShoppingCartLabels" text="Varor" />
+                        <Label alignment="CENTER" layoutX="370.0" layoutY="11.0" prefHeight="27.0" prefWidth="41.0" styleClass="smallShoppingCartLabels" text="Pris" />
+                        <Label alignment="CENTER" layoutX="261.0" layoutY="11.0" prefHeight="30.0" prefWidth="71.0" styleClass="smallShoppingCartLabels" text="Antal" />
+                        <Separator layoutX="28.0" layoutY="38.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <StackPane.margin>
+                  <Insets left="1442.0" top="250.0" />
+               </StackPane.margin>
+               </AnchorPane>
+         </children>
+      </StackPane>
+      <AnchorPane prefHeight="180.0" prefWidth="1920.0" style="-fx-background-color: #26556D;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="homeButton" layoutX="260.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleHomeClick" prefHeight="80.0" prefWidth="80.0" styleClass="navButtons" stylesheets="@imat_app.css">
+               <graphic>
+                  <ImageView fx:id="homeImageView" fitHeight="58.0" fitWidth="58.0" onMouseClicked="#handleHomeClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/home-solid-60.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="logoiMat" alignment="CENTER" layoutX="10.0" layoutY="12.0" onMouseClicked="#homeProductSetup" prefHeight="156.0" prefWidth="250.0" styleClass="logoText" stylesheets="@imat_app.css" text="iMat" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <TextField id="searchBar" fx:id="searchBar" layoutX="397.0" layoutY="65.0" prefHeight="71.0" prefWidth="1049.0" promptText="Sök bland hundratals varor" stylesheets="@imat_app.css">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </TextField>
+            <Button fx:id="favoriteButton" layoutX="1650.0" layoutY="61.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" styleClass="navButtons" stylesheets="@imat_app.css">
+               <graphic>
+                  <ImageView fx:id="favoriteImageView" fitHeight="58.0" fitWidth="58.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon_heart.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="profileButton" layoutX="1780.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleProfileClick" prefHeight="80.0" prefWidth="80.0" styleClass="navButtons" stylesheets="@imat_app.css">
+               <graphic>
+                  <ImageView fx:id="profileImageView" fitHeight="58.0" fitWidth="58.0" onMouseClicked="#handleProfileClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon_user.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="purchaseHistoryButton" layoutX="1520.0" layoutY="62.0" mnemonicParsing="false" onAction="#handlePurchaseHistoryClick" prefHeight="80.0" prefWidth="80.0" styleClass="navButtons" stylesheets="@imat_app.css">
+               <graphic>
+                  <ImageView fx:id="purchaseHistoryImageView" fitHeight="58.0" fitWidth="58.0" nodeOrientation="INHERIT" onMouseClicked="#handlePurchaseHistoryClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon_book_open.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="searchButton" layoutX="1376.0" layoutY="65.0" mnemonicParsing="false" onAction="#searchFunction" prefHeight="70.0" prefWidth="71.0" styleClass="searchButton" stylesheets="@imat_app.css">
+               <graphic>
+                  <ImageView fx:id="searchImageView" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#searchFunction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/search.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="1481.0" layoutY="16.0" prefHeight="27.0" prefWidth="411.0" text="Behöver du hjälp? Kontakta oss på 0701234567" textFill="#fffefe" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      </children>
+   </AnchorPane>

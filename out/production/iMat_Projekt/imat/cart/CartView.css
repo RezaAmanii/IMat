@@ -1,0 +1,18 @@
+.Labels{
+    -fx-font-size: 20px;
+    -fx-font-family: "Inter";
+    /*-fx-alignment: left;*/
+
+}
+.border{
+    -fx-border-color: #A6A6A6;
+    -fx-border-width: 1px;
+}
+
+.pricelabel{
+    -fx-font-size: 16px;
+    -fx-font-family: "Inter";
+    /*-fx-alignment: left;*/
+}
+
+

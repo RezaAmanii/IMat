@@ -1,0 +1,8 @@
+@font-face{
+    src: url("../../../resources/fonts/Oregano-Regular.ttf"), url("../../../resources/fonts/Inter.ttf");
+}
+
+.productLabel{
+    -fx-font-family: "Inter";
+    -fx-font-size: 24px;
+}

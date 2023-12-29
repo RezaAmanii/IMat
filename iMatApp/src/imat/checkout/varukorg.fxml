@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="475.0" stylesheets="@checkout.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="160.0" prefWidth="475.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="131.0" prefHeight="88.0" prefWidth="214.0" styleClass="shoppingCartLabel" text="Varukorg" />
+                  <ImageView fx:id="trashImageView" fitHeight="54.0" fitWidth="54.0" layoutX="349.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" styleClass="hoveringOverTrash">
+                     <image>
+                        <Image url="@../resources/trash.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <AnchorPane layoutY="100.0" prefHeight="68.0" prefWidth="475.0" styleClass="shoppingCartSeparator" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="29.0" layoutY="19.0" prefHeight="30.0" prefWidth="80.0" styleClass="smallShoppingCartLabels" text="Varor" />
+                        <Label alignment="CENTER" layoutX="408.0" layoutY="19.0" prefHeight="27.0" prefWidth="41.0" styleClass="smallShoppingCartLabels" text="Pris" />
+                        <Label alignment="CENTER" layoutX="282.0" layoutY="19.0" prefHeight="30.0" prefWidth="71.0" styleClass="smallShoppingCartLabels" text="Antal" />
+                        <Separator layoutX="28.0" layoutY="38.0" prefWidth="470.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <Separator prefHeight="11.0" prefWidth="474.0" styleClass="shoppingCartSeparator" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="164.0" prefHeight="628.0" prefWidth="475.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="153.0" prefHeight="636.0" prefWidth="475.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <content>
+                        <FlowPane fx:id="checkoutCartPane" prefHeight="200.0" prefWidth="475.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="796.0" prefHeight="104.0" prefWidth="475.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Separator layoutY="-2.0" prefHeight="11.0" prefWidth="475.0" styleClass="shoppingCartSeparator" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Label layoutX="29.0" layoutY="35.0" prefHeight="34.0" prefWidth="85.0" styleClass="shoppingCartText" text="Totalt">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="shoppingCartSum" alignment="CENTER_RIGHT" layoutX="274.0" layoutY="37.0" prefHeight="36.0" prefWidth="173.0" styleClass="shoppingCartText" text="kr">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>

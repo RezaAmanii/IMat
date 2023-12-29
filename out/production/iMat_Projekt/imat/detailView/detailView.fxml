@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root fx:id="detailViewPane" onMouseClicked="#closeDetailView" prefHeight="1080.0" prefWidth="1920.0" styleClass="anchorpane" stylesheets="@detailView.css" type="AnchorPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="mainDetailViewPane" layoutX="148.0" layoutY="208.0" onMouseClicked="#mouseTrap" prefHeight="703.0" prefWidth="1622.0" style="-fx-background-color: #FFFFFF;" styleClass="detail_view_border" stylesheets="@detailView.css" AnchorPane.bottomAnchor="195.0" AnchorPane.leftAnchor="148.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="208.0">
+         <children>
+            <Label fx:id="detailViewPriceLabel" layoutX="1123.0" layoutY="430.0" prefHeight="80.0" prefWidth="434.0" text="Pris : 10 kr/st" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailViewProductName" layoutX="709.0" layoutY="111.0" prefHeight="108.0" prefWidth="689.0" text="Label" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="65.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="detailViewExitImage" fitHeight="81.0" fitWidth="73.0" layoutX="1517.0" layoutY="28.0" onMouseClicked="#closeDetailView" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="detailViewEco" fitHeight="88.0" fitWidth="171.0" layoutX="1407.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="detailViewProductImage" fitHeight="505.0" fitWidth="561.0" layoutX="97.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/logo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="712.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detta är en mycket bra produkt som du borde köpa. Den kommer garanterat hålla sig till dina krav och göra dig nöjd. Priset är som vanligt bäst på marknaden då vi köper våra varor direkt från producenten, utan mellanhänder." wrappingWidth="879.1427307128906">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="detailViewFavorite" fitHeight="59.0" fitWidth="73.0" layoutX="97.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <Label fx:id="breadCrumb" layoutX="20.0" layoutY="13.0" prefHeight="45.0" prefWidth="744.0" text="Label">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <ImageView fx:id="detailViewIncrementButton" fitHeight="80.0" fitWidth="89.0" layoutX="939.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/incrementButton.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="detailViewDecrementButton" fitHeight="80.0" fitWidth="89.0" layoutX="712.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/decrementButton.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="detailViewPriceTextField" alignment="CENTER" layoutX="817.0" layoutY="501.0" prefHeight="59.0" prefWidth="93.0">
+               <font>
+
+                  <Font size="20.0" />
+
+                  <Font size="24.0" />
+
+               </font></TextField>
+         </children></AnchorPane>
+   </children>
+</fx:root>

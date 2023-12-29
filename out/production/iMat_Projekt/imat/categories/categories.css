@@ -1,0 +1,17 @@
+.categoryButtons{
+    -fx-background-radius: 20px;
+    -fx-background-color: #A6A6A6;
+    -fx-font-size: 24px;
+    -fx-font-family: "Inter";
+}
+
+.categoryButtons:focused{
+    -fx-background-radius: 20px;
+    -fx-background-color: #F5A658;
+    -fx-font-size: 24px;
+    -fx-font-family: "Inter";
+}
+
+.hooveringOverButtons:hover{
+    -fx-background-color: #FCFCFC;
+}

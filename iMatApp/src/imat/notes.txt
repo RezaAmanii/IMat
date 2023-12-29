@@ -1,0 +1,5 @@
+Buggar: TODO
+* Hjärtaknappen/sparfunktionen tar inte bort en favorit på första trycket om den redan var sparad sen tidigare.
+* Datumet blir null om man trycker på purchase history knappen.
+
+

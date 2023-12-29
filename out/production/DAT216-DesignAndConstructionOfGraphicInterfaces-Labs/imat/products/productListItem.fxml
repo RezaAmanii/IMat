@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="myItemPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="250.0" styleClass="product-list-controller" stylesheets="@ProductListItemStyling.css" type="AnchorPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="productPicture" fitHeight="181.0" fitWidth="223.0" layoutX="14.0" layoutY="40.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../resources/logo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="productName" alignment="CENTER" layoutX="15.0" layoutY="228.0" prefHeight="26.0" prefWidth="223.0" text="Product Name" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <ImageView fx:id="setFavorite" fitHeight="28.0" fitWidth="28.0" layoutX="17.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="decrement" fitHeight="35.0" fitWidth="35.0" layoutX="35.5" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+         <styleClass>
+            <String fx:value="additem" />
+            <String fx:value="whenclicked" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="increment" fitHeight="35.0" fitWidth="35.0" layoutX="179.5" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+         <styleClass>
+            <String fx:value="additem" />
+            <String fx:value="whenclicked" />
+            <String fx:value="increment-button" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <Label fx:id="priceLabel" alignment="CENTER" layoutX="11.0" layoutY="266.0" prefHeight="19.0" prefWidth="223.0" text="Price" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <ImageView fx:id="ecoSymbol" fitHeight="36.0" fitWidth="44.0" layoutX="22.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="quantityTextField" alignment="CENTER" layoutX="96.0" layoutY="299.0" prefHeight="35.0" prefWidth="54.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+   </children>
+</fx:root>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1920.0" stylesheets="@checkout.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="1920.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane layoutY="-1.0" prefHeight="903.0" prefWidth="1445.0">
+               <content>
+                  <FlowPane fx:id="instructionPane" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </ScrollPane>
+            <AnchorPane layoutX="1445.0" prefHeight="900.0" prefWidth="475.0">
+               <children>
+                  <FlowPane fx:id="fullCartPane" layoutX="-1.0" prefHeight="200.0" prefWidth="475.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>

@@ -1,0 +1,108 @@
+@font-face{
+    src: url("../../resources/fonts/Oregano-Regular.ttf"), url("../../resources/fonts/Inter.ttf");
+}
+
+.instructionLabels{
+    -fx-font-family: "Inter";
+    -fx-font-size: 32px;
+}
+
+.progressInstructionBoxes{
+    -fx-border-width: 3px;
+    -fx-border-color: #26556D #26556D #26556D #26556D;
+    -fx-border-radius: 16px;
+}
+
+.greyInstructionBox{
+    -fx-opacity: 0.5;
+}
+
+.greyButton{
+    -fx-font-family: "Inter";
+    -fx-font-size: 30px;
+    -fx-opacity: 0.5;
+    -fx-background-radius: 16px;
+    -fx-background-color: #7f7f7f;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.4, 1, 2.5);
+}
+
+.greyProgressBar{
+    -fx-stroke-width: 5px;
+    -fx-fill: #7f7f7f;
+    -fx-stroke: #7f7f7f
+}
+
+.progressBar{
+    -fx-stroke-width: 5px;
+    -fx-fill: #F5A658;
+    -fx-stroke: #F5A658;
+}
+
+.finishedProgressBar{
+    -fx-stroke-width: 5px;
+    -fx-fill: #1EA649;
+    -fx-stroke: #1EA649;
+}
+
+.progressLabels{
+    -fx-font-family: "Inter";
+    -fx-font-size: 18px;
+}
+
+.confirmButton{
+    -fx-font-family: "Inter";
+    -fx-font-size: 20px;
+    -fx-background-radius: 16px;
+    -fx-background-color: #1EA649;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.4, 1, 2.5);
+}
+
+#cancelButton{
+    -fx-font-family: "Inter";
+    -fx-font-size: 25px;
+    -fx-background-radius: 16px;
+    -fx-background-color: #FF7F7F;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.4, 1, 2.5);
+}
+
+.deliveryButtons{
+    -fx-font-family: "Inter";
+    -fx-font-size: 30px;
+    -fx-background-radius: 16px;
+    -fx-background-color: #A6A6A6;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.4, 3, 2.5);
+}
+.deliveryButtons:hover{
+    -fx-font-family: "Inter";
+    -fx-font-size: 35px;
+    -fx-background-radius: 16px;
+    -fx-background-color: #F5A658;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.4, 3, 2.5);
+}
+
+.deliveryButtonPressed{
+    -fx-font-family: "Inter";
+    -fx-font-size: 30px;
+    -fx-background-radius: 16px;
+    -fx-background-color: #8CC444;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.4, 3, 2.5);
+}
+
+.instructionOne{
+    -fx-font-family: "Inter";
+    -fx-font-size: 20px;
+}
+
+.errorMessage{
+    -fx-font-family: "Inter";
+    -fx-font-size: 16px;
+    -fx-text-fill: #FF2400
+}
+
+.errorField{
+    -fx-border-color: #FF2400
+}
+
+.completedField{
+    -fx-border-color: #1EA649
+}

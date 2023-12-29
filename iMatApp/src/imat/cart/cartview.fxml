@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="75.0" prefWidth="475.0" styleClass="border" stylesheets="@CartView.css" type="AnchorPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id=".Labels" fx:id="productNameLabel" layoutX="10.0" layoutY="23.0" styleClass="Labels" stylesheets="@CartView.css" text="Product Name" />
+      <ImageView fx:id="minusImageView" fitHeight="30.0" fitWidth="30.0" layoutX="223.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/decrementButton.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="plusImageView" fitHeight="30.0" fitWidth="30.0" layoutX="332.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/incrementButton.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <TextField fx:id="productAmount" alignment="CENTER" layoutX="261.0" layoutY="19.0" prefHeight="30.0" prefWidth="64.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label fx:id="productSumLabel" layoutX="369.0" layoutY="23.0" prefHeight="30.0" prefWidth="105.0" styleClass="Labels" stylesheets="@CartView.css" text="Sum" />
+   </children>
+</fx:root>

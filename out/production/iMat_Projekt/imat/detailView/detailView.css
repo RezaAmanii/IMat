@@ -1,0 +1,13 @@
+.detail_view_border{
+    -fx-border-width: 2px;
+    -fx-border-color: #000000;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 3px, 3px);
+}
+
+
+.anchorpane {
+           -fx-background-color: rgba(0, 0, 0, 0.75);
+}

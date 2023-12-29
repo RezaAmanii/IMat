@@ -1,0 +1,48 @@
+@font-face{
+    src: url("../resources/fonts/Oregano-Regular.ttf"), url("../resources/fonts/Inter.ttf");
+}
+
+#thankYouText{
+    -fx-font-family: "Oregano";
+    -fx-font-size: 72px;
+}
+
+.orderButton{
+    -fx-font-family: "Inter";
+    -fx-font-size: 32px;
+    -fx-background-radius: 32px;
+    -fx-background-color: #F5A658;
+    -fx-text-alignment: right;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.4, 1, 2.5);
+}
+
+.orderLabel{
+    -fx-font-family: "Inter";
+    -fx-font-size: 32px;
+}
+
+.orderStatusLabel{
+    -fx-font-family: "Inter";
+    -fx-font-size: 32px;
+    -fx-font-weight: 7  00;
+}
+
+.descriptionBox{
+    -fx-border-width: 3px;
+    -fx-border-color: #26556D #26556D #26556D #26556D;
+    -fx-border-radius: 8px;
+}
+
+.Button_pliancy{
+    -fx-font-family: "Inter";
+    -fx-font-size: 28px;
+
+
+}
+
+.Button_pliancy:hover{
+    -fx-font-family: "Inter";
+    -fx-font-size: 30px;
+    -fx-background-color: #8CC444;
+    
+}
